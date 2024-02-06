@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-neutral-300 justify-center items-center text-center m-8 ">
+    <h1 class="text-3xl font-semibold text-amber-950 uppercase">Welcome To The Dice Game</h1>
+    <p></p>
+
+    <button onclick="rollDice()" id="dice" class="p-4 bg-white h-24 w-24 m-32 rounded-xl">Roll The Dice</button>
+    <p class="text-2xl" id="diceResult"></p>
+    <p class="text-lg" id="message"></p>
+
+    <script>
+        function rollDice() {
+            var d = Math.random() * 6 + 1;
+            d = Math.floor(d);
+            document.getElementById("diceResult").innerHTML = d;
+        }
+       
+
+    </script>
+
+
+</body>
+
+</html>
